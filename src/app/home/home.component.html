@@ -1,0 +1,28 @@
+<div class="container-fluid bg-secondary">
+    <h1 class="text-info text-center bg-secondary">Showing All Blogs Here ..........</h1>
+
+    <div class="blogholder" *ngFor="let m of model |filter : searchString ">
+        <div class="card">
+            <div class="row">
+                <div class="blogcontainer col-lg-4">
+                    <div class="modal-body">
+                        PostedBy:- <p [innerHTML]="m.name"></p>
+                    </div>
+                    <div class="modal-body">
+                        Description:- 
+                        <p [innerHTML]="m.quotes"></p>
+                    </div>
+                </div>
+                <div class="col-lg-8 a">
+                    <img src="{{m.flag}}">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-sm btn-primary" (click)="onSend(m)">ShowDetails</button>
+                Category :- <strong> {{ m.category }}</strong>
+            </div>
+
+        </div>
+    </div>
+
+</div>

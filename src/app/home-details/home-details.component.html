@@ -1,0 +1,30 @@
+<div class="container-fluid bg-secondary">
+    <h1 class="text-info text-center bg-secondary">Showing BlogDetails Here ..........</h1>
+
+    <div class="blogholder">
+        <div class="card">
+            <div class="row">
+                <div class="blogcontainer col-lg-4">
+                    <div class="modal-body">
+                        PostedBy: <p [innerHTML]= "modelBlogs.name"></p>
+                    </div>
+                    <div class="modal-body">
+                        Description: <p [innerHTML]= "modelBlogs.quotes"></p>
+                    </div>
+                    <div class="modal-body">
+                        Description: <p [innerHTML]= "modelBlogs.form"></p>
+                    </div>
+                </div>
+                <div class="col-lg-8 a">
+                    <img src="{{modelBlogs.flag}}">
+                </div>
+            </div>
+            <div class="modal-footer">
+                Category :- <strong> {{ modelBlogs.category }} </strong>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+

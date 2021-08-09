@@ -1,0 +1,27 @@
+.blogholder{
+    margin: 10px;
+    width:55%;
+    height: auto;
+}
+.blogcontainer{
+    width: 35%;
+    border-right: 1px solid saddlebrown;
+    height: 250px;
+}
+.blogimage{
+    padding-left: 35;
+    width: 200px;
+    height: 100px;
+    float: right;
+}
+.pic{
+    height: inherit;
+    width: 100px;
+    float: right;
+}
+.a{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
